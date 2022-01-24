@@ -1,15 +1,23 @@
 {
   "root": true,
-  "ignorePatterns": ["projects/**/*"],
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
   "env": {
     "browser": true,
+    "jest": true,
     "node": true
   },
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": [
+        "*.ts"
+      ],
       "parserOptions": {
-        "project": ["tsconfig.json", "e2e/tsconfig.json"],
+        "project": [
+          "tsconfig.json",
+          "e2e/tsconfig.json"
+        ],
         "createDefaultProgram": true
       },
       "extends": [
@@ -19,6 +27,9 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@angular-eslint/no-empty-lifecycle-method": "off",
         "@angular-eslint/component-selector": [
           "error",
           {
@@ -41,15 +52,24 @@
             "ignoreCase": false,
             "ignoreDeclarationSort": false,
             "ignoreMemberSort": false,
-            "memberSyntaxSortOrder": ["none", "all", "single", "multiple"],
+            "memberSyntaxSortOrder": [
+              "none",
+              "all",
+              "single",
+              "multiple"
+            ],
             "allowSeparatedGroups": false
           }
         ]
       }
     },
     {
-      "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
       "rules": {}
     }
   ]

@@ -1,5 +1,3 @@
-/* global describe it expect beforeEach*/
-
 import { AppComponent } from './app.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { TestBed } from '@angular/core/testing';

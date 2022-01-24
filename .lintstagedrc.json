@@ -1,5 +1,6 @@
 {
   "*.{js,ts}": "prettier-eslint --write",
   "*.{json,md,html}": "prettier --write",
-  "*.{css,scss}": "stylelint --fix"
+  "*.{css,scss}": "stylelint --fix",
+  "*.{html}": "npx htmlhint"
 }
