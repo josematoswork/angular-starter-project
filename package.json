@@ -18,6 +18,7 @@
     "qlint": "npx eslint src/app/ --quiet --fix",
     "format": "npx prettier src/app --write",
     "prepare": "husky install",
+    "stylelint": "npx stylelint **/*.scss",
     "htmlhint": "npx htmlhint \"**/*.html\""
   },
   "private": true,
